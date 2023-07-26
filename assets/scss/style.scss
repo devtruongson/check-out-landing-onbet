@@ -61,14 +61,9 @@ main {
 }
 
 .title-line-as {
-    text-align         : center;
-    font-size          : 50px;
-    padding            : 10px 0;
-    color              : #fff;
-    -webkit-text-stroke: 2px #E6AD23;
-    text-shadow        : 1px 1px 1px #fff,
-        1px 2px 1px #fff,
-        1px 3px 1px #fff;
+    text-align: center;
+    font-size : 50px;
+    padding   : 0px 0 10px 0;
 }
 
 .title-dac-quyen {
@@ -317,7 +312,11 @@ p {
 }
 
 footer {
-    position: relative;
+    height         : 200px;
+    position       : relative;
+    display        : flex;
+    flex-direction : column;
+    justify-content: flex-end;
 
     h4 {
         text-align: center;
@@ -343,6 +342,15 @@ footer {
 }
 
 @media (max-width: 576px) {
+
+    .show-mobile {
+        display: block;
+        width  : 100%;
+    }
+
+    .show-pc {
+        display: none;
+    }
 
     .header-pc {
         display: none !important;
@@ -445,6 +453,14 @@ footer {
 @media (min-width: 577px) {
     .header-mb {
         display: none;
+    }
+
+    .show-mobile {
+        display: none;
+    }
+
+    .show-pc {
+        display: block;
     }
 
     .item-cate-left {
